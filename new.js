@@ -26,7 +26,9 @@ bot.onText(/(.+)$/, function (msg, match) {
         var parsed = JSON.parse(body);
         var formattedAnswer = "";
 
-
+        bot.sendMessage(msg.chat.id, "heelo smit").then(function () {
+                    // reply sent!
+                });
         var itemsFound = 0;
         // sending answers
         parsed.feed.entry.forEach(function (item) {
